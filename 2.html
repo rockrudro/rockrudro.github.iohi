@@ -1,0 +1,72 @@
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CopyPasteJS</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	
+		</div>
+	
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" value="hi there 01894090" id="txtCopy3">
+			<div class="input-group-append">
+				<button class="btn btn-success" data-copy-origin="#txtCopy3" data-copy-callback="alert('copied')">Copy UPI</button>
+			</div>
+		</div>
+		<br><br>
+		<br>
+		<h5 class="text-success">upi 2</h5>
+		<pre class="alert alert-secondary">hi</pre>
+
+		<button class="btn btn-success" onclick="copyText()">Copy Text</button>
+		<script>
+			
+			function copyText()
+			{
+				CopyPasteJS.copyText("Text copied in JS");
+			}
+
+		</script>
+
+		<br><br>
+		<h5 class="text-success">upi 3</h5>
+		<pre class="alert alert-secondary">hi</pre>
+
+		<button class="btn btn-success" onclick="copyTextAndCallback()">Copy Text and Callback</button>
+
+		<script>
+			
+			function copyTextAndCallback()
+			{
+				CopyPasteJS.copyText("Text copied in JS and Callback triggered", function(){
+					alert("Yes its done");
+				});
+			}
+
+		</script>
+
+	
+	<script src="src/CopyPasteJS.min.js"></script>
+</body>
+</html>
